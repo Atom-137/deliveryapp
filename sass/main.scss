@@ -1,6 +1,6 @@
 $primary: #ff7f00;
 $black2: #495057;
-@import "bootstrap/bootstrap.scss";
+@import 'bootstrap/bootstrap.scss';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -169,7 +169,7 @@ header{
           transform: translateX(-50%);
           width: 100%;
           span{
-            display:block;
+            display: block;
             background: $primary;
             color: #fff;
             border-radius: 10px;
@@ -186,7 +186,7 @@ header{
         .product-name{
           font-weight: 300;
 					font-size: 20px;
-					color: black;
+					color: $black2;
         }
 
   				.restaurant{
@@ -206,14 +206,13 @@ header{
 
         .product-price{
           font-size: 18px;
-          margin:0;
+          margin: 0;
           font-weight: 300;
           color: $black2;
           span{
             font-size: 13px;
             margin-right: 3px;
           }
-
         }
       }
     }
