@@ -20,8 +20,8 @@
           </div>
 
           <div class="col-auto">
-            <div class="avatar-container">
-              <img src="img/avatar.jpg" alt="avatar" data-target="#profileOptions" data-toggle="modal">
+            <div class="avatar-container"  data-target="#profileOptions" data-toggle="modal">
+              <img src="img/avatar.jpg" alt="avatar">
               <i class="fas fa-cog"></i>
             </div>
           </div>
@@ -30,13 +30,15 @@
 </header>
 
 <!-- Modal -->
-<div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
         <h5 class="modal-title" >Opciones</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
 
       <div class="modal-body">
